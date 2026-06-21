@@ -17,7 +17,7 @@ const campuses = [
   {
     id: "krackeddevs",
     location: "KrackedDevs",
-    country: "Tech Community · Pakistan",
+    country: "Tech Community · Malaysia",
     imageUrl: kdLogoImg,
     locked: true,
   },
