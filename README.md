@@ -1,6 +1,3 @@
-# Campus Event Hub (CampusCal)
-
-Campus event discovery app with an admin portal to fetch Instagram events from SME accounts and approve them for display.
 
 ## Prerequisites
 
