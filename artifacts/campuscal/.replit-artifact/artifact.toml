@@ -1,0 +1,31 @@
+kind = "web"
+previewPath = "/"
+title = "CampusCal"
+version = "1.0.0"
+id = "artifacts/campuscal"
+router = "path"
+
+[[integratedSkills]]
+name = "react-vite"
+version = "1.0.0"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 22860
+
+[services.development]
+run = "pnpm --filter @workspace/campuscal run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/campuscal", "run", "build" ]
+publicDir = "artifacts/campuscal/dist/public"
+serve = "static"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "22860"
+BASE_PATH = "/"
